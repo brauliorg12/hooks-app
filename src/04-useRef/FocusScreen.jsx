@@ -16,7 +16,7 @@ export const FocusScreen = () => {
         type="text"
         placeholder="Nombre de pokemón"
         className="form-control"
-        autoFocus
+        // autoFocus
       />
 
       <button className="btn btn-primary mt-2" onClick={handleClick}>

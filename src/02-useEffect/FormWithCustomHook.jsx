@@ -3,13 +3,12 @@ import { Message } from './Message';
 import { useForm } from '../hooks/useForm';
 
 export const FormWithCustomHook = () => {
-  const [formState, handleInputChange, handleResetForm] = useForm({
+  const { onInputChange, onResetForm, username, email, password } = useForm({
     username: '',
     email: '',
     password: '',
   });
 
-  const { username, email, password } = formState;
 
   // Se dispara cuando el username del form cambia
   useEffect(() => {
@@ -38,7 +37,7 @@ export const FormWithCustomHook = () => {
         name="username"
         autoComplete="off"
         value={username}
-        onChange={handleInputChange}
+        onChange={onInputChange}
       />
       <input
         type="text"
@@ -47,7 +46,7 @@ export const FormWithCustomHook = () => {
         name="email"
         autoComplete="off"
         value={email}
-        onChange={handleInputChange}
+        onChange={onInputChange}
       />
 
       <input
@@ -57,10 +56,10 @@ export const FormWithCustomHook = () => {
         name="password"
         autoComplete="off"
         value={password}
-        onChange={handleInputChange}
+        onChange={onInputChange}
       />
 
-      <button className="btn btn-primary mt-2" onClick={handleResetForm}>
+      <button className="btn btn-primary mt-2" onClick={onResetForm}>
         Reset
       </button>
       {/* </form> */}

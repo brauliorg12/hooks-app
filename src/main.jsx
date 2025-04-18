@@ -14,12 +14,14 @@ import { Memorize } from './06-memos/Memorize';
 import { MemoHook } from './06-memos/MemoHook';
 import { CallbackHook } from './06-memos/CallbackHook';
 import { Padre } from './07-tarea-memo/Padre';
+// import './08-useReducer/intro-reducer';
+import { TodoApp } from './08-useReducer/TodoApp';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HooksApp />
 
-    <CounterApp />
+    {/* <CounterApp />
 
     <CounterWidthCustomHook />
 
@@ -39,6 +41,8 @@ createRoot(document.getElementById('root')).render(
 
     <CallbackHook />
 
-    <Padre />
+    <Padre /> */}
+
+    <TodoApp  />
   </StrictMode>
 );

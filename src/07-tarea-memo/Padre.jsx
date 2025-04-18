@@ -22,6 +22,8 @@ export const Padre = () => {
         <Hijo key={n} numero={n} incrementar={incrementarFn} />
       ))}
       {/* <Hijo /> */}
+
+      <hr />
     </div>
   );
 };
