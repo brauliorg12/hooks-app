@@ -1,5 +1,3 @@
-// { type: [todo remove], payload: id }
-
 export const todoReducer = (initialState = [], action) => {
   switch (action.type) {
     case '[TODO] Add Todo':
@@ -11,7 +9,6 @@ export const todoReducer = (initialState = [], action) => {
     case '[TODO] Toggle Todo':
       return initialState.map((todo) => {
         if (todo.id === action.payload) {
-          // id
           return {
             ...todo,
             done: !todo.done,
