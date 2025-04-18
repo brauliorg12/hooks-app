@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HooksApp />
 
-    {/* <CounterApp />
+    <CounterApp />
 
     <CounterWidthCustomHook />
 
@@ -41,8 +41,8 @@ createRoot(document.getElementById('root')).render(
 
     <CallbackHook />
 
-    <Padre /> */}
+    <Padre />
 
-    <TodoApp  />
+    <TodoApp />
   </StrictMode>
 );
